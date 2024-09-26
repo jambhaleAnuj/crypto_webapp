@@ -1,17 +1,5 @@
 import React from "react";
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 export default function App() {
-  const navigation = [
-    { name: "Caesar Cipher", href: "/caesar" },
-    { name: "Features", href: "#" },
-    { name: "Marketplace", href: "#" },
-    { name: "Company", href: "#" },
-  ];
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="bg-[#FFFDF2]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -30,11 +18,7 @@ export default function App() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{" "}
-              <a href="#" className="font-semibold text-black">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+              Made with 💖 by Anuj Jambhale
             </div>
           </div>
           <div className="text-center">
