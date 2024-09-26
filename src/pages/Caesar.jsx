@@ -15,7 +15,7 @@ const Caesar = () => {
   const [decrypt, setDecrypt] = useState("");
 
   return (
-    <div className="flex items-center justify-center p-12">
+    <div className="flex items-center justify-center p-12 mt-10">
       <div className="mx-auto w-full">
         <div>
           <h1 className="font-semibold items-center text-center justify-center text-5xl mb-11">
