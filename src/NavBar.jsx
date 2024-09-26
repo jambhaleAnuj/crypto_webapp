@@ -25,7 +25,7 @@ const NavBar = () => {
               className="-m-1.5 p-1.5"
             >
               <span className="sr-only">Your Company</span>
-              <img alt="" src="./public/AJ_logo.png" className="h-8 w-auto" />
+              <img alt="" src="/public/AJ_logo.png" className="h-8 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">
