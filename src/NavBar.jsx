@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../public/images/AJ_logo.png";
 
 const NavBar = () => {
   const navigation = [
@@ -25,11 +26,7 @@ const NavBar = () => {
               className="-m-1.5 p-1.5"
             >
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="/public/images/AJ_logo.png"
-                className="h-8 w-auto"
-              />
+              <img alt="" src={logo} className="h-8 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -72,11 +69,7 @@ const NavBar = () => {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  alt=""
-                  src="/public/images/AJ_logo.png"
-                  className="h-8 w-auto"
-                />
+                <img alt="" src={logo} className="h-8 w-auto" />
               </a>
               <button
                 type="button"
