@@ -9,7 +9,7 @@ const NavBar = () => {
     { name: "Home", href: "/" },
     { name: "Caesar Cipher", href: "/caesar" },
     { name: "DES", href: "/des" },
-    { name: "Company", href: "#" },
+    { name: "HMAC", href: "/hmac" },
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

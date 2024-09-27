@@ -4,7 +4,9 @@ import App from "./App.jsx";
 import Caesar from "./pages/Caesar.jsx";
 import NavBar from "./NavBar.jsx";
 import DES from "./pages/DES.jsx";
+import HMAC_crypt from "./pages/HMAC_crypt.jsx";
 import "./index.css";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "des",
     element: <DES />,
+  },
+  {
+    path: "hmac",
+    element: <HMAC_crypt />,
   },
 ]);
 
