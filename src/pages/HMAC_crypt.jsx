@@ -11,18 +11,18 @@ const HMAC_crypt = () => {
     <div className="flex items-center justify-center p-12 mt-10">
       <div className="mx-auto w-full">
         <div>
-          <h1 className="font-semibold items-center text-center justify-center text-5xl mb-11">
+          <h1 className="font-semibold items-center text-center justify-center mt-4 text-xl sm:text-5xl mb-11">
             Hash-based Message Authentication Code - HMAC
           </h1>
         </div>
 
         <div>
-          <h3 className="font-semibold text-2xl mb-4">
+          <h3 className="font-semibold text-xl sm:text-2xl mb-4">
             Hashing Using HMAC SHA256
           </h3>
         </div>
         <div className="mb-5">
-          <label className="mb-3 block text-base font-medium text-[#07074D]">
+          <label className="mb-3 block text-sm sm:text-base font-medium text-[#07074D]">
             Plain Text:{" "}
             <input
               className="w-full rounded-md border border-[#e0e0e0] bg-white  px-3 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#000000] focus:shadow-md"
@@ -33,13 +33,13 @@ const HMAC_crypt = () => {
           </label>
         </div>
         <div className="mb-5">
-          <label className="mb-3 block text-base font-medium text-[#07074D]">
+          <label className="mb-3 block text-sm sm:text-base font-medium text-[#07074D]">
             Key:{" "}
             <input
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-m"
               value={secret}
               onChange={(e) => setSecret(e.target.value)}
-              placeholder="secret"
+              placeholder="Secret"
             />{" "}
           </label>
         </div>
@@ -55,11 +55,11 @@ const HMAC_crypt = () => {
           {hmac !== "" && (
             <p className="font-semibold">
               Your Encrypted text is <br />
-              <p className=" font-medium"> {hmac} </p>
+              <p className=" font-medium text-balance"> {hmac} </p>
             </p>
           )}
         </div>
-        <div className="m-11 font-medium text-xl ">
+        <div className="m-11 font-medium text-md sm:text-xl ">
           HMACSHA256 is a type of keyed hash algorithm that is constructed from
           the SHA-256 hash function and used as a Hash-based Message
           Authentication Code (HMAC). The HMAC process mixes a secret key with

@@ -22,7 +22,7 @@ const NavBar = () => {
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">CipherCraft</span>
-              <img alt="" src={logo} className="h-12 w-auto" />
+              <img alt="" src={logo} className="h-10 w-auto  sm:h-12" />
             </a>
           </div>
           <div className="flex lg:hidden">

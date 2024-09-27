@@ -8,10 +8,16 @@ function caesarDecrypt(str, shift) {
 
     // Check if the character is a letter
     if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
-      // Shift the letter by the shift amount, wrapping around the alphabet if necessary
+      // Shift the letter by the shift amount
       ascii -= shift;
-      if ((ascii > 90 && str[i] <= "Z") || ascii > 122) {
-        ascii -= 26;
+
+      // Wrap around for uppercase letters
+      if (ascii < 65 && str[i] <= "Z") {
+        ascii += 26;
+      }
+      // Wrap around for lowercase letters
+      else if (ascii < 97 && str[i] >= "a") {
+        ascii += 26;
       }
     }
 
