@@ -55,7 +55,7 @@ const HMAC_crypt = () => {
           {hmac !== "" && (
             <p className="font-semibold">
               Your Encrypted text is <br />
-              <p className=" font-medium text-balance"> {hmac} </p>
+              <p className=" font-medium text-wrap overflow-auto"> {hmac} </p>
             </p>
           )}
         </div>
