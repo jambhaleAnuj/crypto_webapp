@@ -1,4 +1,3 @@
-import React from "react";
 export default function App() {
   return (
     <div className="bg-[#FFFDF2]">
@@ -22,10 +21,13 @@ export default function App() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              CipherCraft: Your Go-To Tool for Cryptography
+            <h1 className=" font-bold tracking-wide text-3xl text-gray-900 sm:text-6xl">
+              CipherCraft <br />
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <h1 className="font-semibold tracking-tight text-gray-700 mt-6 sm:text-4xl text-xl ">
+              Your Go-To Tool for Cryptography
+            </h1>
+            <p className="mt-6 text-md sm:text-lg  leading-8 text-gray-600">
               From Caesar to Modern Algorithms: Explore Cryptographic Techniques
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
