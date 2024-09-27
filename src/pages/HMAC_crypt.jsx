@@ -55,11 +55,13 @@ const HMAC_crypt = () => {
           {hmac !== "" && (
             <p className="font-semibold">
               Your Encrypted text is <br />
-              <p className=" font-medium text-wrap overflow-auto"> {hmac} </p>
+              <p className=" font-medium text-wrap overflow-auto mt-4">
+                {hmac}
+              </p>
             </p>
           )}
         </div>
-        <div className="m-11 font-medium text-md sm:text-xl ">
+        <div className="my-11 font-medium text-md sm:text-xl ">
           HMACSHA256 is a type of keyed hash algorithm that is constructed from
           the SHA-256 hash function and used as a Hash-based Message
           Authentication Code (HMAC). The HMAC process mixes a secret key with
