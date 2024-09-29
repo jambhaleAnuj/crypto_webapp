@@ -1,18 +1,21 @@
 // Function to implement Caesar's cipher
 function caesarCipher(str, shift) {
-  var output = "";
+  let output = "";
+
+  // Normalize the shift to be within 0-25
+  shift = shift % 26;
 
   // Loop through each character in the input string
-  for (var i = 0; i < str.length; i++) {
-    var ascii = str[i].charCodeAt();
+  for (let i = 0; i < str.length; i++) {
+    let ascii = str.charCodeAt(i);
 
-    // Check if the character is a letter
-    if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
-      // Shift the letter by the shift amount, wrapping around the alphabet if necessary
-      ascii += shift;
-      if ((ascii > 90 && str[i] <= "Z") || ascii > 122) {
-        ascii -= 26;
-      }
+    // Check if the character is an uppercase letter
+    if (ascii >= 65 && ascii <= 90) {
+      ascii = ((ascii - 65 + shift) % 26) + 65; // Adjust for uppercase letters
+    }
+    // Check if the character is a lowercase letter
+    else if (ascii >= 97 && ascii <= 122) {
+      ascii = ((ascii - 97 + shift) % 26) + 97; // Adjust for lowercase letters
     }
 
     // Add the new character to the output string
@@ -20,7 +23,6 @@ function caesarCipher(str, shift) {
   }
 
   // Return the output string
-  console.log(output);
   return output;
 }
 
